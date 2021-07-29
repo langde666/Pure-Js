@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Main -->
+    <div class="main">
+        <form action="" class="form" id="form-1">
+            <div class="form-header">
+                <h3>Sign Up</h3>
+                <p>Welcome to my lab !</p>
+            </div>
+
+            <div class="form-body ">
+                <div class="form-group">
+                    <label for="fullname" class="form-label">Full name</label>
+                    <input type="text" rule="required" name="fullname" placeholder="Eg: Lang De" class="form-control" id="fullname">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" rule="required|email" name="email" placeholder="Eg: langde666@gmail.com" class="form-control" id="email">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" rule="required|min:6" name="password" placeholder="Enter your password" class="form-control" id="password">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password_confirmation" class="form-label">Confirm password</label>
+                    <input type="password" rule="required|confirm:#form-1 #password" name="password_confirmation" placeholder="Confirm your password" class="form-control" id="password_confirmation">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="avatar" class="form-label">Avatar</label>
+                    <input type="file" rule="required" name="avatar" class="form-control" id="avatar">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="local" class="form-label">Local</label>
+                    <select type="local" rule="required" name="local" class="form-control" id="local">
+                        <option value="">-- Choose your local --</option>
+                        <option value="asia">Asia</option>
+                        <option value="europe">Europe</option>
+                        <option value="america">America</option>
+                    </select>
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender" class="form-label">Gender</label>
+                    <div class="form-group-radio">
+                        <input type="radio" name="gender" rule="required" value="male" class="form-control form-control-radio">
+                        Male
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" name="gender" rule="required" value="female" class="form-control form-control-radio">
+                        Female
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" name="gender" rule="required" value="other" class="form-control form-control-radio">
+                        Other
+                    </div>                    
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="attention" class="form-label">Attention</label>
+                    <div class="form-group-radio">
+                        <input type="checkbox" name="attention" rule="required" value="sport" class="form-control form-control-radio">
+                        Sport
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="checkbox" name="attention" rule="required" value="music" class="form-control form-control-radio">
+                        Music
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="checkbox" name="attention" rule="required" value="movie" class="form-control form-control-radio">
+                        Movie
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="checkbox" name="attention" rule="required" value="game" class="form-control form-control-radio">
+                        Game
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="checkbox" name="attention" rule="required" value="other" class="form-control form-control-radio">
+                        Other
+                    </div>                 
+                    <span class="form-message"></span>
+                </div>
+
+                <button class="form-submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="./assets/js/validator.js"></script>
+    <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>
