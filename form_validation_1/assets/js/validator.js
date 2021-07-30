@@ -1,10 +1,7 @@
 //Validator
-function Validator(selector, options) {
+function Validator(selector) {
+    var _this = this;
     var formRules = {};
-
-    if (!options) {
-        options = {};
-    }
 
     var validatorRules = {
         required: function(value) {
@@ -99,7 +96,7 @@ function Validator(selector, options) {
             }
 
             if (isValid) {
-                if (typeof options.onSubmit === 'function') {
+                if (typeof _this.onSubmit === 'function') {
 
                     var inputs = formElement.querySelectorAll('[name]');
                     var formValues = Array.from(inputs).reduce(function(values, input) {
@@ -137,7 +134,7 @@ function Validator(selector, options) {
                         return values;
                     }, {});
 
-                    options.onSubmit(formValues);
+                    _this.onSubmit(formValues);
                 }
                 else {
                     formElement.submit();

@@ -1,8 +1,8 @@
 import Validator from '../js/validator.js';
 
 
-Validator('#form-1', {
-    onSubmit: function(data) {
-        console.log(data);
-    }
-});
+var registerForm = new Validator('#form-1');
+
+registerForm.onSubmit = function(formData) {
+    console.log(formData);
+};
