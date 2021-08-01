@@ -1,5 +1,5 @@
 # Pure-Js
-i code javascript in the purest way...
+I code javascript in the purest way...
 
 - Form validator libraby
 - Form validator libraby (1)
