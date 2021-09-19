@@ -9,6 +9,7 @@ i code javascript in the purest way...
 - day 6 - scroll animation
 - day 7 - split landing page
 - day 8 - form wave animation
+- day 9 - sound board
 
 # references
 - 50 Projects In 50 Days
