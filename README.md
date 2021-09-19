@@ -7,6 +7,7 @@ i code javascript in the purest way...
 - day 4 - hidden search widget
 - day 5 - blurry loading
 - day 6 - scroll animation
+- day 7 - split landing page
 
 # references
 - 50 Projects In 50 Days
