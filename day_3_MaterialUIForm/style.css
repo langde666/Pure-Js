@@ -144,7 +144,7 @@ body {
     width: 100%;
 }
 
-/* Ripple effect */
+/* Ripple effect for button */
 .ripple {
     position: relative;
     overflow: hidden;
